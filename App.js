@@ -1,7 +1,7 @@
-//-------https://www.youtube.com/watch?v=ewpkNBq87DQ-------//
+//------- https://www.youtube.com/watch?v=wNDu0606sYQ -------//
 import React, { Component } from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import CustomButton from './components/button';
+import ButtonCustom from './components/button';
 
 class App extends Component {
 
@@ -32,11 +32,11 @@ class App extends Component {
 		return (
 			<View style = {styles.container}>
 				<View style = {styles.subcontainer}>
-        <CustomButton label = "-" action = {this.handleDown} />
-					<View style = {styles.counterContainer}>
-						<Text style = {styles.counter}>{counter}</Text>
-					</View>
-					<CustomButton label = "+" action = {this.handleUp} />
+        <ButtonCustom label = "-" action = {this.handleDown} />
+				<View style = {styles.counterContainer}>
+					<Text style = {styles.counter}>{counter}</Text>
+				</View>
+				<ButtonCustom label = "+" action = {this.handleUp} />
 				</View>
 			</View>
 		);
